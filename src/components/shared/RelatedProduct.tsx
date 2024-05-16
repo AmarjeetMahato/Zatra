@@ -20,7 +20,7 @@ const RelatedProduct: React.FC = () => {
   }, []);
 
   return (
-    <main className='max-w-8xl  my-8 z-0 px-4 lg:px-10 mx-auto grid grid-cols-2 gap-5 md:grid-cols-3'>
+    <main className='max-w-8xl  my-8 z-0 px-2 lg:px-10 mx-auto grid grid-cols-2 gap-x-4  md:grid-cols-3'>
       {products?.splice(0,6).map((item) => (
         <Link href={`/product/${item.id}`} key={item.id} className='rounded-sm shadow-lg p-3 relative'>
           <p>

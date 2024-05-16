@@ -77,7 +77,7 @@ export default async function Footer() {
 
 
       <div className=" p-[7.5px] flex  items-center justify-center  flex-col text-[12px]">
-                    <span>@ {year} SNITCH</span>
+                    <span>@ {year} ZATRA</span>
                     <p className=" flex items-center gap-x-[4px] font-semibold">Made in India, for the World <BiWorld/></p>
 
               </div>

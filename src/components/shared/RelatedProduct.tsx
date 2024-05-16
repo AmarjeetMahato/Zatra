@@ -7,7 +7,7 @@ import { Product } from '@/types';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-const Home: React.FC = () => {
+const RelatedProduct: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   
   useEffect(() => {
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
 
   return (
     <main className='max-w-8xl  my-8 z-0 px-4 lg:px-10 mx-auto grid grid-cols-2 gap-5 md:grid-cols-3'>
-      {products?.map((item) => (
+      {products?.splice(0,6).map((item) => (
         <Link href={`/product/${item.id}`} key={item.id} className='rounded-sm shadow-lg p-3 relative'>
           <p>
                
@@ -40,4 +40,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default RelatedProduct;

@@ -1,5 +1,8 @@
 
-
+export enum LOGIN_VIEW {
+    SIGN_IN = "sign-in",
+    REGISTER = "register",
+  }
 
 
 // Define TypeScript interfaces for the product data

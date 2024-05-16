@@ -1,10 +1,9 @@
 import React from 'react'
 import { Input } from "@/components/ui/input"
 import { Button } from '@/components/ui/button'
-import { IoMailOutline } from 'react-icons/io5'
-import { LOGIN_VIEW } from '@/app/login/page'
 import { FcGoogle } from 'react-icons/fc'
 import { SlPhone } from 'react-icons/sl'
+import { LOGIN_VIEW } from '@/types'
 
 
 type Props = {
